@@ -1,0 +1,96 @@
+:root {
+    /* Colors*/
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/*Body Copy
+Font size (paragraph): 16px
+Font
+Family: Roboto*/
+
+body {
+    background-color: var(--charcoal-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--dark-slate-grey);
+    font-weight: 400;
+}
+
+.content-window {
+    background-color: var(--white);
+    font-size: 16px;
+    color: var(--dark-slate-grey);
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    border-radius: 30px;
+}
+
+#text {
+   
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0% 5%;
+    line-height: 2rem;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+h2{
+    line-height:1.5rem;
+}
+ul{
+padding-top:2rem ;
+padding-left:25px;
+line-height: 2.2rem;
+}
+li {
+    list-style-image: url('./assets/images/icon-list.svg');
+}
+
+#input-area{
+    display:flex;
+    flex-direction:column;
+    padding: 10% 0%;
+}
+
+#email-label{
+font-weight: 700;
+font-size: smaller;
+}
+#email-address{
+    padding: 3.5% 5%;
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+    font-size: 16px;
+}
+#illustration {
+    width: 450px;
+    height: 593px;
+    background-image: url('./assets/images/illustration-sign-up-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.btn{
+    color: var(--white);
+    background-color: var(--dark-slate-grey);
+    border-radius: 10px;
+    text-align: center;
+    padding:5% 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size:16px;
+}
