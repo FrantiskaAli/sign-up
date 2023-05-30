@@ -35,7 +35,7 @@ body {
 }
 
 #text {
-   
+
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -48,34 +48,39 @@ h1 {
     font-size: 50px;
     font-weight: 700;
 }
-h2{
-    line-height:1.5rem;
+
+h2 {
+    line-height: 1.5rem;
 }
-ul{
-padding-top:2rem ;
-padding-left:25px;
-line-height: 2.2rem;
+
+ul {
+    padding-top: 2rem;
+    padding-left: 25px;
+    line-height: 2.2rem;
 }
+
 li {
     list-style-image: url('./assets/images/icon-list.svg');
 }
 
-#input-area{
-    display:flex;
-    flex-direction:column;
+#input-area {
+    display: flex;
+    flex-direction: column;
     padding: 10% 0%;
 }
 
-#email-label{
-font-weight: 700;
-font-size: smaller;
+#email-label {
+    font-weight: 700;
+    font-size: smaller;
 }
-#email-address{
+
+#email-address {
     padding: 3.5% 5%;
     border-radius: 5px;
     border: 1px solid var(--grey);
     font-size: 16px;
 }
+
 #illustration {
     width: 450px;
     height: 593px;
@@ -84,44 +89,68 @@ font-size: smaller;
     background-repeat: no-repeat;
     border-radius: 20px;
 }
-#labels{
+
+#labels {
     display: flex;
     justify-content: space-between;
 }
-.btn{
+
+.btn {
     color: var(--white);
     background-color: var(--dark-slate-grey);
     border-radius: 10px;
     text-align: center;
-    padding:5% 0;
+    padding: 5% 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size:16px;
+    font-size: 16px;
 }
-.invalid-input{
-    color:var(--tomato);
-    border:1px solid var(--tomato) !important;
+
+.btn:hover {
+    cursor: pointer;
+    background: linear-gradient(0.25turn,var(--tomato) 50%, orange);
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(249, 63, 97, 0.498);
+    box-shadow: 5px 5px 20px 0px rgba(249, 63, 97, 0.498);
+}
+
+
+.invalid-input {
+    color: var(--tomato);
+    border: 1px solid var(--tomato) !important;
     background-color: hsla(4, 100%, 67%, 0.5);
 }
-.invalid-input:focus{
+
+.invalid-input:focus {
     background-color: var(--white);
-    outline:1px solid var(--tomato) !important ;
+    outline: 1px solid var(--tomato) !important;
 }
-.error{
+
+.error {
     color: var(--tomato);
-    font-size:small;
+    font-size: small;
     float: center;
 }
-.success{
+
+.success {
     flex-direction: column;
-    width: 30%;
+    max-width: 30%;
     font-family: 'Roboto', sans-serif;
+    padding: 2rem 5rem;
 }
-.success-img{
-    width: 50px;
-    height: 50px;
-    
+
+.success-img {
+    width: 60px;
+    height: 60px;
+
 }
-.success-btn{
+
+.success-btn {
     font-size: medium;
+    margin-top: 10%;
 }
+@keyframes pop {
+    from {size: 0%;}
+    to {size: 100%;}
+  }
