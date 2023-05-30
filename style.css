@@ -138,6 +138,9 @@ li {
     max-width: 30%;
     font-family: 'Roboto', sans-serif;
     padding: 2rem 5rem;
+    animation-name: pop;
+    animation-duration: 2s;
+    
 }
 
 .success-img {
@@ -151,6 +154,40 @@ li {
     margin-top: 10%;
 }
 @keyframes pop {
-    from {size: 0%;}
-    to {size: 100%;}
+    from {transform: scale(0) ;}
+    to {transform: scale(1);}
+  }
+  @media screen and (max-width: 720px) {
+    #content-window {
+        flex-direction: column-reverse;
+        width:100%;
+    }
+    #illustration{
+        background-image: url('./assets/images/illustration-sign-up-mobile.svg');
+        width:99vw;
+        height: 284px;
+        background-size: cover;
+        border-radius: 15px;;
+    }
+    .success {
+        flex-direction: column !important;
+        border-radius:0px !important;
+        max-width: 100vw;
+        max-height: 100vh;
+        height: 100vh;
+        width:100vw;
+        padding:0 20% !important ;
+    }
+    .success-img{
+        margin-top: 15vh;
+    }
+    .tyH{
+        margin-top: -25vh;
+    }
+    .thanks-text{
+        margin-top: -20vh;
+    }
+    #dismiss{
+        margin-bottom: 5vh;
+    }
   }
