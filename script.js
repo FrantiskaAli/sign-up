@@ -10,7 +10,7 @@ $("#submit-btn").on('click', function () {
     if (re.test(emailValue)) {
         //alert("valid email");
         $('#content-window').empty();
-        const image = $("<img>").attr('src','./assets/images/icon-success.svg').addClass('success-img');
+        const image = $("<img>").attr('src','./assets/images/icon-success.svg').addClass('success-img').attr('alt', 'tick');
         const heading = $("<h1>").text("Thanks for subscribing!").addClass('tyH');
         const message = $(`<p class="thanks-text"> A confirmation email has been sent to <strong>${emailValue}</strong> 
         Please open it and click the button inside to confirm your subscription.</p>`);
